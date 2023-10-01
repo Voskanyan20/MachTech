@@ -17,7 +17,7 @@ const router = createBrowserRouter(
     <>
       <Route>
         <Route exact path='/' element={<Layout />}>
-          <Route path='rightSide' element={<RightSide />}/>
+          <Route index='rightSide' element={<RightSide />}/>
           {/* <Route path='rightSide' element={<RightSide />} /> */}
           {/* <Route path='rightSide' element={<RightSideLayout />}>
             <Route path={'folderInfo'} element={<FolderInfo />} />
