@@ -1,4 +1,3 @@
-import React from 'react'
 import '.././components/leftSide/index.css'
 import LeftSideMain from '../components/leftSide/leftSidefolders/LeftSideMain'
 

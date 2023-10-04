@@ -1,0 +1,69 @@
+.modal_header {
+  background: #e8f0ff;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.modal_title {
+  color: #4698f0;
+  font-family: Segoe UI;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.acces_modal_main {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.acces_modal_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 18px 0 15px;
+}
+
+.access_fullname {
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.access_select {
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  width: 200px;
+  height: 42px;
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 8px;
+}
+.access_add_button {
+  display: flex;
+  width: 465px;
+  padding: 11px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 555px;
+  background: #4698f0;
+  color: white;
+  border: none;
+  margin: 11px auto;
+  cursor: pointer;
+}
+.access_add_button:hover {
+  background-color: #007bff;
+  transition: all 0.2s ease;
+}

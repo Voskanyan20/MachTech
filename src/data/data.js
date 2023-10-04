@@ -94,21 +94,39 @@ export const folderIcons = [
 ]
 export const folders = [
   {
-    id: uniqueId,
+    id: 1,
     name: "Одежда",
     category: 'Shoes',
     description: 'This is a folder1',
     folderColor: 'red',
     folderIcon: defaultFolder,
-    key: [
+    pass: [
       {
-        id: uniqueId,
+        id: 2,
         name: 'Adidas',
         login: 'login',
         password: 'password',
         url: 'www.adidas.com',
-        comment: 'sport Shoes'
-      }
+        comment: 'sport Shoes',
+      },
+      {
+        id: 5,
+        name: 'Bdidas',
+        login: 'login',
+        password: 'password',
+        url: 'www.adidas.com',
+        comment: 'sport Shoes',
+      },
+    ]
+  },
+  {
+    id: 3,
+    name: "Pants",
+    category: 'Shoes',
+    description: 'This is a folder1',
+    folderColor: 'red',
+    folderIcon: defaultFolder,
+    pass: [
     ]
   },
 ]

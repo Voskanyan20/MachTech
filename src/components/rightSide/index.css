@@ -1,0 +1,89 @@
+.right_side_title {
+  color: #4698f0;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.right_side_main {
+}
+.right_side_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 8px 0 8px;
+}
+.info_label {
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.info_content {
+  width: 200px;
+  height: 47px;
+  border-radius: 50px;
+  border: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+.info_copy {
+  object-fit: none;
+  cursor: copy;
+  padding-left: 5px;
+}
+.description_div {
+  padding: 0 8px;
+  margin-top: 22px;
+}
+.desc_content {
+  width: 283px;
+  height: 110px;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  padding: 6px 0 0px 6px;
+  margin-top: 10px;
+}
+.desc_text {
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.right_side_tools {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.toolButtons {
+  display: inline-flex;
+  padding: 8px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 555px;
+  background: #e8f0ff;
+  border: none;
+  font-size: 9px;
+  cursor: pointer;
+}
+.toolButtons:hover {
+  background: #cfdffd;
+  transition: all 0.2s ease;
+}
+.info_view{
+  object-fit: none;
+  cursor: copy;
+}

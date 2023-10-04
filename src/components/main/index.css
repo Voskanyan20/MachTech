@@ -1,0 +1,32 @@
+.table_create_pass {
+  width: 213%;
+  height: 48px;
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-left: 14px !important;
+  border-radius: 5px !important;
+  border: 1px dashed #afb0b3 !important;
+  margin-top: 10px !important;
+  color: #141414 !important;
+  font-family: Segoe UI !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.table_create_pass > img {
+  padding-right: 5px;
+}
+.passiveStar{
+    cursor: pointer;
+}
+.activeStar{
+    cursor: pointer;
+}
+.table_body{
+    cursor: pointer;
+}
+.table_body:hover{
+    background: #E8F0FF;
+    transition: all 0.2s ease;
+}

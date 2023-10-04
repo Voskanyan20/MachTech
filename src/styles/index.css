@@ -25,6 +25,10 @@
   border-radius: 0px 10px 0px 0px;
   background: #e8f0ff;
   height: 57px;
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  padding-left: 15px;
 }
 .MuiDataGrid-columnHeaders {
   background: #e8f0ff !important;
@@ -39,4 +43,8 @@
   line-height: normal;
   text-align: center;
   padding-top: 80%;
+}
+.css-rorn0c-MuiTableContainer-root{
+  height: 92%;
+  /* overflow: scroll; */
 }

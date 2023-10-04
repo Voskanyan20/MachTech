@@ -46,17 +46,23 @@
 .folder {
   width: 100%;
   height: 45px;
-  display: flex !important;
-  justify-content: space-between !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 .folder:hover {
   background-color: #e8f0ff;
   transition: all 0.2s ease;
   cursor: pointer;
 }
+.folder_infos_div {
+  display: flex;
+}
 .folder_icon {
   width: 23px;
   height: 18px;
+  margin-right: 10px;
 }
 .folder_name {
   color: #141414;
@@ -69,15 +75,15 @@
 }
 .more_popup {
   background-image: url('../../assets/morePopUp.svg');
-  width: 18%;
+  width: 263px;
   height: 175px;
-  position: absolute;
-  left: 1%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-left: 9px;
+  position: absolute;
+  z-index: 4;
 }
 
 .more_popup_button {

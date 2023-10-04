@@ -6,38 +6,63 @@ import accessIcon from '../../assets/rightSideButtons/access.svg'
 import historyIcon from '../../assets/rightSideButtons/history.svg'
 import editIcon from '../../assets/rightSideButtons/edit.svg'
 import urlCopy from '../../assets/rightSideButtons/Link_Break.svg'
+import passview from '../../assets/passwordView.svg'
 import './index.css'
 
-export default function FolderInfo () {
-  const folderId = useParams()
+export default function PasswordInfo () {
+  const passwordId = useParams()
+  const [passwordDataById, setPasswordDataById] = useState(null)
   const [folderDataById, setFolderDataById] = useState(null)
-  const id = folderId.folderId
-  const active = folderId.active
+  const folderId = passwordId.folderId
+  const id = passwordId.passwordId
+  const active = passwordId.active
 
   useEffect(() => {
-    const foundItem = folders.find(item => item.id == id)
-    setFolderDataById(foundItem)
+    const foundFolder = folders.find(item => item.id == folderId)
+    setFolderDataById(foundFolder)
+
+    const foundPassword = foundFolder.pass?.find(item => item.id == id)
+    setPasswordDataById(foundPassword)
   }, [id])
+
+  console.log('DATA', passwordDataById)
 
   return (
     <div id='right_side_div'>
-      {folderDataById && active === 'false' ? (
+      {passwordDataById && active === 'false' ? (
         <>
           <header className='right_side_header'>
-            <h1 className='right_side_title'>{folderDataById.name}</h1>
+            <h1 className='right_side_title'>{passwordDataById.name}</h1>
           </header>
           <main className='right_side_main'>
             <div className='right_side_info'>
-              <p className='info_label'>{folderDataById.name}</p>
+              <p className='info_label'>Логин:</p>
               <span className='info_content'>
-                {folderDataById.name}
+                {passwordDataById.login}
+                <img className='info_copy' src={copyIcon} />
+              </span>
+            </div>
+            <div className='right_side_info'>
+              <p className='info_label'>Пароль:</p>
+              <span className='info_content'>
+                {passwordDataById.password}
+                <span>
+                  <img className='info_view' src={passview} />
+                  <img className='info_copy' src={copyIcon} />
+                </span>
+              </span>
+            </div>
+            <div className='right_side_info'>
+              <p className='info_label'>URL:</p>
+              <span className='info_content'>
+                {passwordDataById.url}
                 <img className='info_copy' src={copyIcon} />
               </span>
             </div>
             <section className='description_div'>
-              <p className='info_label'>Описание:</p>
+              <p className='info_label'>Комментарий:</p>
               <div className='desc_content'>
-                <p className='desc_text'>{folderDataById.description}</p>
+                <p className='desc_text'>{passwordDataById.description}</p>
               </div>
             </section>
             <section className='right_side_tools'>

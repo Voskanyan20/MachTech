@@ -1,11 +1,7 @@
 import React from 'react'
 import './styles/index.css'
-import { Route, Router, Routes ,RouterProvider } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
 import router from './router/Router'
-import Layout from './layout/Layout'
-import Main from './pages/Main'
-import RightSide from './pages/RightSide'
-
 
 export default function App () {
   return (
