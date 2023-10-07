@@ -15,16 +15,30 @@
   font-weight: 700;
   line-height: normal;
 }
-.acces_modal_main {
+.access_modal_main {
   width: 100%;
-  height: 50px;
   text-align: center;
 }
-.acces_modal_content {
+.access_modal_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 23px 18px 0 15px;
+}
+.modal_content {
+  align-items: center;
+  padding: 23px 18px 0 15px;
+}
+.modal_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.modal_items_big {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .access_fullname {
@@ -66,4 +80,310 @@
 .access_add_button:hover {
   background-color: #007bff;
   transition: all 0.2s ease;
+}
+#create_access {
+  width: 92%;
+  height: 340px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+}
+.access_create_header {
+  background: #e8f0ff;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.access_create_title {
+  color: #4698f0;
+  font-family: Segoe UI;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.access_create_body {
+  width: 93%;
+  /* background: silver; */
+  height: 295px;
+  margin: 0 auto;
+}
+.access_create_search_div {
+  /* position: fixed;
+  top: 1; */
+  width: 100%;
+}
+.access_create_input {
+  border-radius: 100px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  width: 100%;
+  height: 32px;
+  padding-left: 14px;
+  margin: 9px 0;
+}
+.access_create_content {
+  width: 100%;
+  max-height: fit-content;
+  overflow: auto;
+}
+.access_create_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create_info_first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.create_info_name {
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.access_create_select {
+  padding: 3px 10px;
+  border-radius: 100px;
+  background: #e8f0ff;
+  width: 21%;
+  color: #000;
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.access_create_buttons {
+  width: 92%;
+  margin: 0 auto;
+}
+.access_create_save {
+  width: 100% !important;
+  padding: 10px 0px !important;
+  border-radius: 555px !important;
+  background: #4698f0 !important;
+  border: none !important;
+  margin: 4px 0 !important;
+  color: #fff !important;
+  font-family: Segoe UI !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.access_create_cancel {
+  width: 100% !important;
+  padding: 10px 0px !important;
+  border-radius: 555px !important;
+  border: none !important;
+  margin-bottom: 3px !important;
+  background: #627384 !important;
+  color: #fff !important;
+  font-family: Segoe UI !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.access_create_cancel:hover {
+  background-color: #4b5763 !important;
+  transition: all 0.2s ease !important;
+}
+.access_create_save:hover {
+  background-color: #0c7cf3 !important;
+  transition: all 0.2s ease !important;
+}
+.toolButtons {
+  display: inline-flex;
+  padding: 8px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 555px;
+  background: #e8f0ff;
+  border: none;
+  font-size: 9px;
+  cursor: pointer;
+}
+.tool_icons {
+  width: 14px;
+  height: 14px;
+}
+.history_head_img {
+  margin-right: 5px;
+}
+.history_table_body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+}
+.menu_icon {
+  margin-right: 20px;
+  cursor: pointer;
+  width: 33px;
+  height: 23px;
+}
+.setting_button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: white;
+  text-align: start;
+  padding-left: 15px;
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.setting_button:hover {
+  transition: all 0.2s ease;
+  background: #e8f0ff;
+}
+.modal_header_icons_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+}
+.info_label {
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.modal_input {
+  width: 350px;
+  height: 45px;
+  border-radius: 10px !important;
+  border: 1px solid #dfdfdf;
+  color: #141414 !important;
+  font-family: Segoe UI !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.modal_input_big {
+  width: 350px;
+  height: 100px;
+  border-radius: 10px !important;
+  border: 1px solid #dfdfdf;
+  color: #141414 !important;
+  font-family: Segoe UI !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.color_icons_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+.color_icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.folder_icon_select {
+  cursor: pointer;
+}
+.sub_folder {
+  width: 100%;
+  height: 245px;
+  display: flex;
+  justify-content: end;
+}
+.sub_folder_div {
+  width: 350px;
+  max-height: 244px;
+  overflow-y: scroll;
+}
+.table_create_pass {
+  width: 213%;
+  height: 48px;
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-left: 14px !important;
+  border-radius: 5px !important;
+  border: 1px dashed #afb0b3 !important;
+  margin-top: 10px !important;
+  color: #141414 !important;
+  font-family: Segoe UI !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.table_create_pass > img {
+  padding-right: 5px;
+}
+.css-10hburv-MuiTypography-root {
+  color: #000 !important;
+  font-family: Segoe UI !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.css-1iohbei-MuiList-root {
+  list-style: none;
+  left: 80%;
+  padding: 0;
+  position: absolute !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100px;
+  max-width: 100px;
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(183, 183, 183, 0.25);
+}
+.error_massage {
+  font-family: Segoe UI !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  color: red;
+  margin-left: 25% !important;
+}
+.error_massage_password {
+  border-radius: 555px !important;
+  padding: 6px 15px !important;
+  background: #ffe8e8 !important;
+  color: #ae4545 !important;
+  font-family: Segoe UI !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  display: flex !important;
+  flex-direction: inherit !important;
+}
+.error_massage_password > img {
+  margin-right: 5px;
+}
+.pass_infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
 }

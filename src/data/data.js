@@ -5,17 +5,19 @@ import folder4 from '../assets/folderIcons/folder4.svg'
 import folder5 from '../assets/folderIcons/folder5.svg'
 import folder6 from '../assets/folderIcons/folder6.svg'
 import defaultFolder from '../assets/folder.svg'
+import user1 from '../assets/user1.svg'
+import user2 from '../assets/user2.svg'
+
 // import { v4 as uuidv4 } from 'uuid'
 // const uniqueId = uuidv4();
 
-let idCounter = 0
-
-function generateUniqueId () {
-  idCounter += 1
-  return idCounter
-}
-
-const uniqueId = generateUniqueId()
+////////////////////////////////////////////////////
+// let idCounter = 0
+// function generateUniqueId () {
+//   idCounter += 1
+//   return idCounter
+// }
+// const uniqueId = generateUniqueId()
 
 export const colors = [
   {
@@ -95,19 +97,20 @@ export const folderIcons = [
 export const folders = [
   {
     id: 1,
-    name: "Одежда",
+    name: 'Одежда',
     category: 'Shoes',
     description: 'This is a folder1',
     folderColor: 'red',
     folderIcon: defaultFolder,
+    url: 'https://proj.3nv.ru/kеyrights',
     pass: [
       {
         id: 2,
-        name: 'Adidas',
+        name: '3nv.ru',
         login: 'login',
         password: 'password',
-        url: 'www.adidas.com',
-        comment: 'sport Shoes',
+        url: 'https://proj.3nv.ru/kеyrights',
+        comment: '3nv.ru shoes page'
       },
       {
         id: 5,
@@ -115,39 +118,40 @@ export const folders = [
         login: 'login',
         password: 'password',
         url: 'www.adidas.com',
-        comment: 'sport Shoes',
-      },
+        comment: 'sport Shoes'
+      }
     ]
   },
   {
     id: 3,
-    name: "Pants",
+    name: 'Pants',
     category: 'Shoes',
     description: 'This is a folder1',
     folderColor: 'red',
     folderIcon: defaultFolder,
-    pass: [
-    ]
-  },
+    pass: []
+  }
 ]
 
-// export const DATA = {
-//   folders: [
-//     {
-//       id: uniqueId,
-//       category: 'Shoes',
-//       description: 'This is a folder1',
-//       folderColor: 'red',
-//       folderIcon: '1',
-//       key: [
-//         {
-//           name: 'Adidas',
-//           login: 'login',
-//           password: 'password',
-//           url: 'www.google.com',
-//           comment: 'sport Shoes'
-//         }
-//       ]
-//     }
-//   ]
-// }
+export const user = [
+  {
+    id: 1,
+    firstName: 'Жанна',
+    lastName: 'Фиров',
+    fatherName: 'Сергеевич',
+    image: user1,
+    role: 'Редактор',
+    history: 'Изменение пароля',
+    date: '13.07.2023, в 14:03'
+  },
+  {
+    id: 2,
+    firstName: 'Олег',
+    lastName: 'Фиров',
+    fatherName: 'Сергеевич',
+    image: user2,
+    role: 'Читатель',
+    history: 'Изменение пароля',
+    date: '13.07.2023, в 14:03'
+  }
+]

@@ -1,32 +1,21 @@
-.table_create_pass {
-  width: 213%;
-  height: 48px;
-  display: inline-flex !important;
-  align-items: center !important;
-  margin-left: 14px !important;
-  border-radius: 5px !important;
-  border: 1px dashed #afb0b3 !important;
-  margin-top: 10px !important;
-  color: #141414 !important;
-  font-family: Segoe UI !important;
-  font-size: 12px !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  line-height: normal !important;
+.passiveStar {
+  cursor: pointer;
 }
-.table_create_pass > img {
-  padding-right: 5px;
+.activeStar {
+  cursor: pointer;
 }
-.passiveStar{
-    cursor: pointer;
+.table_body {
+  cursor: pointer;
 }
-.activeStar{
-    cursor: pointer;
+.table_body:hover {
+  background: #e8f0ff;
+  transition: all 0.2s ease;
 }
-.table_body{
-    cursor: pointer;
-}
-.table_body:hover{
-    background: #E8F0FF;
-    transition: all 0.2s ease;
+.main_pass_name {
+  color: #141414;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

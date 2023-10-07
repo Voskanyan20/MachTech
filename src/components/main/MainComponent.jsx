@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { folders } from '../../data/data'
 import './index.css'
-import plusIcon from '../../assets/plusIcon.svg'
 import passiveStar from '../../assets/passiveStar.svg'
 
 import {
-  Button,
   Table,
   TableBody,
   TableCell,
@@ -15,6 +13,7 @@ import {
   TableRow
 } from '@mui/material'
 import MainTableHeader from './MainTableHeader'
+import { CreatePassword } from '../modals/CreatePassword'
 
 export default function MainComponent () {
   const folderId = useParams()
@@ -27,14 +26,10 @@ export default function MainComponent () {
   const [valueToDirection, setValueToDirection] = useState('name')
   const [isActive, setIsActive] = useState(false)
 
-  // console.log('folderId', folderId)
-
   useEffect(() => {
     const foundItem = folders.find(item => item.id == id)
     setFolderDataById(foundItem)
   }, [id])
-
-  /// Routing ///
 
   /// Pagination ///
   const handlechangepage = (event, newPage) => {
@@ -77,11 +72,6 @@ export default function MainComponent () {
     return stabilisedRow.map(el => el[0])
   }
 
-  // const sendId = (passwordId, active) => {
-  //   // console.log(folderId, active)
-  //   return `passwordInfo/${passwordId}/${active}`
-  // }
-
   return (
     <>
       <TableContainer height='auto'>
@@ -107,7 +97,10 @@ export default function MainComponent () {
                         pass={row.name}
                       >
                         <TableCell>
-                          <Link to={`/passwordInfo/${id}/${row.id}/${isActive}`}>
+                          <Link
+                            className='main_pass_name'
+                            to={`/passwordInfo/${id}/${row.id}/${isActive}`}
+                          >
                             {row.password}
                           </Link>
                         </TableCell>
@@ -122,9 +115,7 @@ export default function MainComponent () {
                       </TableRow>
                     ))
                 ) : (
-                  <Button className='table_create_pass'>
-                    <img src={plusIcon} alt='' /> Добавить пароль
-                  </Button>
+                  <CreatePassword />
                 )}
               </>
             ) : null}

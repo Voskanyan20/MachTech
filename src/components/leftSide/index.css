@@ -6,12 +6,6 @@
   justify-content: center;
   background: #4698f0;
 }
-.menu_icon {
-  margin-right: 20px;
-  cursor: pointer;
-  width: 33px;
-  height: 23px;
-}
 .search_icon {
   cursor: pointer;
   width: 33px;
@@ -67,11 +61,10 @@
 .folder_name {
   color: #141414;
   font-family: Segoe UI;
-  font-size: 10px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-right: 90px;
 }
 .more_popup {
   background-image: url('../../assets/morePopUp.svg');
@@ -100,6 +93,11 @@
   width: 96%;
   padding-left: 9px;
   text-align: start;
+  cursor: pointer;
+}
+.more_button {
+  border: none;
+  background: transparent;
   cursor: pointer;
 }
 .more_popup_button:hover {

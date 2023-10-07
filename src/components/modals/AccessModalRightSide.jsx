@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
 import '../leftSide/index.css'
-import keyIcon from '../../assets/keyIcon.svg'
+import accessIcon from '../../assets/rightSideButtons/access.svg'
 import modalClose from '../../assets/modalClose.svg'
 import modalLine from '../../assets/modalLine.svg'
 import deleteIcon from '../../assets/deleteIcon.svg'
 import user1 from '../../assets/userLogo/user1.svg'
 import './index.css'
 import CreateAccess from './CreateAccess'
+import { Button } from '@mui/material'
 
 const style = {
   position: 'absolute',
@@ -19,7 +20,7 @@ const style = {
   bgcolor: 'white'
 }
 
-export const AccessModal = () => {
+export const AccessModalRightSide = () => {
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -27,12 +28,10 @@ export const AccessModal = () => {
 
   return (
     <div style={{ display: 'inline', border: 'none', borderRadius: '10px' }}>
-      <img
-        onClick={handleOpen}
-        className='menu_icon'
-        src={keyIcon}
-        alt='Доступ'
-      />
+      <Button onClick={handleOpen} className='toolButtons'>
+        <img className='tool_icons' src={accessIcon} alt='Доступ' />
+        Доступ
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}

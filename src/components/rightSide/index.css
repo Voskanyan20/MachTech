@@ -6,8 +6,6 @@
   font-weight: 700;
   line-height: normal;
 }
-.right_side_main {
-}
 .right_side_info {
   display: flex;
   justify-content: space-between;
@@ -24,12 +22,9 @@
 }
 .info_content {
   width: 200px;
-  height: 47px;
-  border-radius: 50px;
+  height: 42px;
+  border-radius: 50px !important;
   border: 1px solid #dfdfdf;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 12px;
 }
 .info_copy {
@@ -66,24 +61,25 @@
   justify-content: space-between;
   padding: 15px 0;
 }
-
 .toolButtons {
-  display: inline-flex;
-  padding: 8px 8px;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  border-radius: 555px;
-  background: #e8f0ff;
-  border: none;
-  font-size: 9px;
-  cursor: pointer;
+  gap: 4px;
+  border-radius: 555px !important;
+  background: #e8f0ff !important;
+  border: none !important;
+  font-size: 8px !important;
 }
 .toolButtons:hover {
-  background: #cfdffd;
-  transition: all 0.2s ease;
+  background: #cfdffd !important;
+  transition: all 0.2s ease !important;
 }
-.info_view{
+.info_view {
   object-fit: none;
   cursor: copy;
+}
+.MuiInputBase-input {
+  padding: 0 2px !important;
+}
+
+.description_div > div {
+  -webkit-align-items: start !important;
 }

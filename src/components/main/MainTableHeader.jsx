@@ -14,7 +14,7 @@ export default function MainTableHeader ({
   return (
     <TableHead style={{ background: '#F2F2F2', height: '57px' }}>
       <TableRow>
-        <TableCell style={{width: "45%"}} key='name'>
+        <TableCell style={{ width: '45%' }} key='name'>
           <TableSortLabel
             active={valueToDirection === 'name'}
             direction={valueToDirection === 'name' ? orderDirection : 'asc'}
@@ -23,8 +23,10 @@ export default function MainTableHeader ({
             Название
           </TableSortLabel>
         </TableCell>
-        <TableCell style={{width: "45%"}}>URL</TableCell>
-        <TableCell><img className='activeStar' src={activeStar} alt="" /></TableCell>
+        <TableCell style={{ width: '45%' }}>URL</TableCell>
+        <TableCell>
+          <img className='activeStar' src={activeStar} alt='' />
+        </TableCell>
       </TableRow>
     </TableHead>
   )

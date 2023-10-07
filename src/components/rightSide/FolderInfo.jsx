@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { folders } from '../../data/data'
-import copyIcon from '../../assets/copyIcon.svg'
-import accessIcon from '../../assets/rightSideButtons/access.svg'
-import historyIcon from '../../assets/rightSideButtons/history.svg'
-import editIcon from '../../assets/rightSideButtons/edit.svg'
 import urlCopy from '../../assets/rightSideButtons/Link_Break.svg'
 import './index.css'
+import { History } from '../modals/History'
+import { AccessModalRightSide } from '../modals/AccessModalRightSide'
+import { EditFolder } from '../modals/EditFolder'
+import FolderInfoInputs from './FolderInfoInputs'
+import { Button } from '@mui/material'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { errorCopy, successCopy } from '../../utils/messages'
 
 export default function FolderInfo () {
   const folderId = useParams()
@@ -27,32 +30,24 @@ export default function FolderInfo () {
             <h1 className='right_side_title'>{folderDataById.name}</h1>
           </header>
           <main className='right_side_main'>
-            <div className='right_side_info'>
-              <p className='info_label'>{folderDataById.name}</p>
-              <span className='info_content'>
-                {folderDataById.name}
-                <img className='info_copy' src={copyIcon} />
-              </span>
-            </div>
-            <section className='description_div'>
-              <p className='info_label'>Описание:</p>
-              <div className='desc_content'>
-                <p className='desc_text'>{folderDataById.description}</p>
-              </div>
-            </section>
+            <FolderInfoInputs
+              name={folderDataById.name}
+              description={folderDataById.description}
+            />
             <section className='right_side_tools'>
-              <button className='toolButtons'>
-                <img src={accessIcon} alt='' /> Доступ
-              </button>
-              <button className='toolButtons'>
-                <img src={historyIcon} alt='' /> История
-              </button>
-              <button className='toolButtons'>
-                <img src={editIcon} alt='' /> Изменить
-              </button>
-              <button className='toolButtons'>
-                <img src={urlCopy} alt='' /> Ссылка
-              </button>
+              <AccessModalRightSide />
+              <History />
+              <EditFolder data={folderDataById} />
+              <CopyToClipboard text={folderDataById.url}>
+                <Button
+                  onClick={() =>
+                    folderDataById.url ? successCopy() : errorCopy()
+                  }
+                  className='toolButtons'
+                >
+                  <img src={urlCopy} alt='' /> Ссылка
+                </Button>
+              </CopyToClipboard>
             </section>
           </main>
         </>
